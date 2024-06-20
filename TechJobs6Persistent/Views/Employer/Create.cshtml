@@ -3,7 +3,7 @@
 
 <h1>Add New Employer</h1>
 
-<form asp-controller="Employer" asp-action="ProcessCreateEmployerForm" method="post">
+<form asp-controller="Employer" asp-action="Create" method="post">
 
     <div class="form-group">
         <label>Employer Name</label>
@@ -16,7 +16,7 @@
     <div class="form-group">
         <label>Employer Location</label>
         <input asp-for="Location" class="form-control"/>
-        <span asp-validation-for="Location" class="text-danger"> </span>/>
+        <span asp-validation-for="Location" class="text-danger"> </span>
     </div>
 
     <br />

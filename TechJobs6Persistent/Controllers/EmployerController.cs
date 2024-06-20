@@ -12,7 +12,7 @@ using TechJobs6Persistent.ViewModels;
 
 namespace TechJobs6Persistent.Controllers
 {
-    [Route("/employers")]
+    [Route("/employers")] 
     public class EmployerController : Controller
     { 
         private JobDbContext context;
@@ -42,10 +42,10 @@ namespace TechJobs6Persistent.Controllers
             {
                 return View("create", addEmployerViewModel);
             }
-            Employer employer = new() { Name = addEmployerViewModel.Name };
+            Employer employer = new() { Name = addEmployerViewModel.Name, Location = addEmployerViewModel.Location };
             context.Employers.Add(employer);
             context.SaveChanges();
-            return Redirect("employers");
+            return Redirect("Index");
         }
 
         public IActionResult About(int id)

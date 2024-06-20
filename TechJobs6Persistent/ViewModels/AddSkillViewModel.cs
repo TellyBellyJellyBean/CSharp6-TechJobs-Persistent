@@ -30,6 +30,6 @@ namespace TechJobs6Persistent.ViewModels
         }
 
         public AddSkillViewModel() { }
-    }
+    } 
 }
 
