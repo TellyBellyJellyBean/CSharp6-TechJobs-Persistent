@@ -19,3 +19,4 @@ namespace TechJobs6Persistent.Models
         }
     }
 }
+ 
